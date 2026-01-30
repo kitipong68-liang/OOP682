@@ -1,4 +1,4 @@
-from models.person import person
+from models.person import Person
 
 class Student(Person):
     def __init__(self, pid, name, age, student_id):
