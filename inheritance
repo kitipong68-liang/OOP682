@@ -1,0 +1,45 @@
+class Person:
+    def __init__(self, pid, name, age):
+        self.pid = pid
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return f"PID: {self.pid}, Name: {self.name}, Age: {self.age}"
+
+    def get_info(self):
+        return f"PID: {self.pid}, Name: {self.name}, Age: {self.age}"
+
+
+class Student(Person):
+    def __init__(self, pid, name, age, student_id):
+        super().__init__(pid, name, age)
+        self.student_id = student_id
+
+    def __str__(self):
+        return f"{super().__str__()}, Student ID: {self.student_id}"
+
+
+class Staff(Person):
+    def __init__(self, pid, name, age, staff_id):
+        super().__init__(pid, name, age)
+        self.staff_id = staff_id
+
+    def __str__(self):
+        return f"{super().__str__()}, Staff ID: {self.staff_id}"
+
+
+def main():
+    person01= Person("P005","asa",20)
+    student1 = Student("P001", "Somchai", 20, "S12345")
+    staff1 = Staff("P002", "Suda", 35, "ST6789")
+
+    print(student1)
+    print(staff1)
+    print(person01)
+    print(student1.get_info())
+    print(staff1.get_info())
+
+
+if __name__ == "__main__":
+    main()

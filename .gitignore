@@ -1,6 +1,7 @@
 # Python-generated files
 __pycache__/
 *.py[oc]
+<<<<<<< HEAD
 build/
 dist/
 wheels/
@@ -8,3 +9,49 @@ wheels/
 
 # Virtual environments
 .venv
+=======
+
+# Build artifacts
+build/
+dist/
+wheels/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE settings
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Lock files
+*.lock
+>>>>>>> 24e134270b137fbb3050eae32f6969ceeb0a14af
