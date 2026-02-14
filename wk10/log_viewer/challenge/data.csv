@@ -1,0 +1,4 @@
+Timestamp,Level,Message
+2024-01-01 10:00,INFO,System Start
+2024-01-01 10:05,WARNING,High Memory
+2024-01-01 10:10,ERROR,Disk Full
